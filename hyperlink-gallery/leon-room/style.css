@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+}
+.background {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    top:0;
+
+}
+
+.background img{
+  width:100%;
+  height: 100%;
+}
+.content{
+  padding: 300px 10px;
+  margin: auto;
+  width:100%;
+  max-width: 700px;
+}
+.content p{
+  margin:0;
+}
+
+.bio{
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+.big-projects{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.big-projects a{
+  color: red;
+  font-size: 2em;
+}
+.big-projects a:hover{
+  background-color: red;
+  color: white;
+}
+
+.small-projects{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.small-projects a{
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: bold;
+}
+.small-projects a:visited{
+  color:blue;
+}
+.small-projects a:hover{
+  color: red;
+  background-color: blue;
+}
+
+.margin-left-10{
+  margin-left: 10px;
+}
+.margin-left-30{
+  margin-left: 30px;
+}
+.margin-left-80{
+  margin-left: 80px;
+}
+.margin-left-110{
+  margin-left: 110px;
+}
+
+
+.bannerdiv{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:5;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  border: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.bannerdiv p{
+  /* display: inline-block; */
+  margin: 4px 0;
+  margin-right: 10px;
+  font-weight: normal;
+
+}
+.bannerdiv p:last-child{
+  margin-left: 10px;
+}
+
+.bannerdiv p a{
+  color: black;
+  font-size: 0.9em;
+}
+
+/* .bannerdiv p a:visited{
+  color: white;
+} */
