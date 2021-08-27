@@ -65,7 +65,8 @@ Start by finding the settings of your repo. With the repo open, click right here
 
 ![3-settings.png](assets/3-settings.png)
 
-Next, scroll to find the GitHub Pages section and select the "master" branch (if you are curious what a branch is, ask me after class 🙂), like so:
+Next, scroll to find the GitHub Pages section (you will see their layout changed a little) and select the "main" branch (if you are curious what a branch is, ask me after class 🙂), like so:
+
 
 ![4-select-master-branch.png](assets/4-select-master-branch.png)
 
@@ -91,11 +92,11 @@ Quiz: How could you make the browser render the `index.html` file that is inside
 
 ![index.html](assets/9-index.png)
 
-The link to your GitHub Page (the one you compied before) that looks soething like `your-username.github.io/abc-stud...` point to the "root" of your repo the most basic folder inside it. From there, you can navigate through all files and folders by modifying the url. If you append `/projects/test-page/index.html` to the url, the browser will render that files. Try it! FYI, you can ommit writing "index.html" here, as your browser looks by files with this name by default. Things should look like this:
+The link to your GitHub Page (the one you copied before) that looks something like `your-username.github.io/abc-stud...` point to the "root" of your repo the most basic folder inside it. From there, you can navigate through all files and folders by modifying the url. If you append `/projects/test-page/index.html` to the url, the browser will render that files. Try it! FYI, you can omit writing "index.html" here, as your browser looks by files with this name by default. Things should look like this:
 
 ![page](assets/7-the-page.png)
 
-Great. We are done with GitHub for now. Later we leanr how we can modify files on our computer and then push them to the GitHub repository and hence truly do with the page(s) "what we want". 👻
+Great. We are done with GitHub for now. Later we learn how we can modify files on our computer and then push them to the GitHub repository and hence truly do with the page(s) "what we want". 👻
 
 #### Software
 
@@ -278,7 +279,7 @@ Finally, making use of the **atom-live-server** and **Chrome Developer Tools** y
 
 *if you want another exercise, [goats](#goats)
 
-Please build a website like this in pure ("vanilla") JavaScript. Feel free to add you own styling or variations. But keep the functionality: an input element (of type "range") that controls the number of images (in my case goats) on the page. Give your best and ask the Internet all of your questions, it can help!
+Please build a website like this in pure ("vanilla") JavaScript (no p5js, please). Feel free to add you own styling or variations. But keep the functionality: an input element (of type "range") that controls the number of images (in my case goats) on the page. Give your best and ask the Internet all of your questions, it can help!
 
 ###### keyword hints
 
