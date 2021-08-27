@@ -329,7 +329,7 @@ abc-student-repo
 
 ###### Add a link to our class Wiki
 
-find the files your have just worked on on your GitHub account (do you see the README.md file rendered, too?). Copy the link to them (this will probably look a bit like ``github.com/your-username/abc-student-repo/tree/master/projects/coding-foundation``) and paste it on our [Class Wiki](https://github.com/leoneckert/abc-f20/wiki).
+find the files your have just worked on on your GitHub account (do you see the README.md file rendered, too?). Copy the link to them (this will probably look a bit like ``github.com/your-username/abc-student-repo/tree/master/projects/coding-foundation``) and paste it on our [Class Wiki](https://github.com/leoneckert/abc-browser-circus/wiki).
 
 ## DONE! 😃
 ### This was A LOT. Please be proud.
