@@ -330,7 +330,10 @@ abc-student-repo
 
 ###### Add a link to our class Wiki
 
-find the files your have just worked on on your GitHub account (do you see the README.md file rendered, too?). Copy the link to them (this will probably look a bit like ``github.com/your-username/abc-student-repo/tree/master/projects/coding-foundation``) and paste it on our [Class Wiki](https://github.com/leoneckert/abc-browser-circus/wiki).
+find both the online code view of your website (in Github), as well as the actual webpage (GitHub Pages) version of it.
+(1) The code link looked will probably look a bit like ``github.com/your-username/abc-student-repo/tree/master/projects/coding-foundation``
+(2) The GitHub Pages link begin with your ``username.github.io/.....``, a little bit like this.
+(3) after finding both those link, paste them to the Coding Foundation section in on our [Class Wiki](https://github.com/leoneckert/abc-browser-circus/wiki).
 
 ## DONE! 😃
 ### This was A LOT. Please be proud.
