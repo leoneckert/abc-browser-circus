@@ -1,0 +1,15 @@
+.moveBox{
+  width: 50px;
+  height: 50px;
+  background-color: #4262ff;
+
+  /* make sure the boxes stay within the frame: */
+  position: fixed;
+  top:0px;
+  left:0px;
+
+  /* same trick as in animation-1, we define the transition time
+  for changes on the transform property here,
+  than do the actual changes in JS */
+  transition: transform 2s;
+}

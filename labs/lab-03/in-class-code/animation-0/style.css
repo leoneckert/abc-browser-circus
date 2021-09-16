@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+}
+
+/* styling for all boxes to make them show up on the
+page (width, height color) and keep a distance
+from each other: */
+.box{
+  width:40px;
+  height:40px;
+  background-color: black;
+  margin:10px;
+}
+
+/* the first box keeps spinning
+we define the animation below
+and then apply it here inside the
+normal css styling brackets: */
+.box-1{
+
+  /* test rotate */
+  /* transform: rotate(20deg); */
+
+  /* assign animation defined below: */
+  animation-name: spin;
+  animation-duration: 1s;
+  /* this defines that the animation should repeat forever: */
+  animation-iteration-count: infinite;
+  /* the timing function describes the accelaration of the movement
+  here are more: https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp */
+  animation-timing-function: linear;
+}
+
+/* to define an animatio we need the
+keyword @keyframes followed by the
+name we give the animation */
+@keyframes spin {
+  /* this animation only has two keyframes:
+  no rotation */
+  from{
+    transform: rotate(0deg);
+  }
+  /* full rotation */
+  to{
+    transform: rotate(360deg);
+  }
+  /* thats why we can use from and to */
+}
+
+.box-2{
+  animation-name: shrink;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes shrink {
+  from{
+    width:40px;
+    height:40px;
+  }
+  to{
+    width: 10px;
+    height: 10px;
+  }
+} */
+
+/* here we use a different trick for more granularity
+we can use percentages to define what the animation
+should look like at any point */
+@keyframes shrink {
+  0%{
+    width:40px;
+    height:40px;
+  }
+  50%{
+    width: 10px;
+    height: 10px;
+  }
+  100%{
+    width:40px;
+    height:40px;
+  }
+}
+
+.box-3{
+  /* transform: translate(100px, 0); */
+  position: relative;
+  /* left:100px; */
+  animation-name: leftright;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* instead of using the left property
+transform: translate(x, y)
+might be a better option (less expensive for the browser) */
+@keyframes leftright {
+  0%{
+    left:0px;
+  }
+  20%{
+    left:200px
+  }
+  50%{
+    left:20px;
+  }
+  70%{
+    left: 120px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+
+.box-4{
+  position: relative;
+  animation-name: mix;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mix {
+  0%{
+    top:0px;
+    transform: rotate(0deg);
+  }
+  30%{
+    top:200px;
+    transform: rotate(0deg);
+  }
+  50%{
+    top:200px;
+    transform: rotate(360deg);
+  }
+  51%{
+    top:200px;
+
+  }
+  100%{
+    top:0px;
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,33 @@
+body{
+  /* margin:0; */
+  text-align: center;
+  margin-top:80px;
+}
+
+#button{
+  color:red;
+
+  /* here it gets interesting,
+  we define that any property change of the
+  transform property should be transitioned
+  within 1 second.
+  later, when we change the transform property
+  in JS, the transition will take place  */
+  transition: transform 1s;
+
+}
+.box{
+  /* center the box */
+  margin:auto;
+  /* sizing, spacing, coloring */
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+
+  /* make the cursor change on hover */
+  cursor: pointer;
+
+  /* same trick as above */
+  transition: transform 1s;
+}
