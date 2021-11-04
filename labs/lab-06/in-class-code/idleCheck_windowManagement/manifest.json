@@ -1,0 +1,21 @@
+{
+  "name": "COUNTING EXTENSION",
+  "description": "1, 2, 3, 5, you know I mean",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "tent.png",
+    "default_popup": "popup/index.html"
+  },
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "permissions":[
+    "storage",
+    "idle",
+    "tabs",
+    "activeTab",
+    "*://*/*",
+    "chrome://*"
+  ]
+}
