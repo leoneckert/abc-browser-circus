@@ -7,7 +7,6 @@ const server = http.createServer(app); //create a server and tell it to delegate
 const { Server } = require("socket.io"); // ...knows how to speak websocket
 const io = new Server(server); // create socket server that builds on top of http server
 
-server
 
 // text
 // button
