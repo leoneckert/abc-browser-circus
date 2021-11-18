@@ -12,28 +12,11 @@ let online = []
 
 io.on('connection', (socket) => {
   console.log('a user connected');
-  // let peerID = uuid();
-  // socket.emit("peerID", peerID)
-  //
-  // setTimeout(()=>{
-  //   socket.emit("call", online)
-  //
-  //   online.push({
-  //     socketID: socket.id,
-  //     peerID: peerID
-  //   });
-  //   console.log(online)
-  // }, 1000)
-  socket.on("signup", (msg)=>{
-    console.log("signup", msg)
-    socket.emit("call", online)
-    online.push({
-      socketID: socket.id,
-      peerID: msg
-    });
-    console.log(online)
-  })
-
+  online.push({
+    socketID: socket.id,
+    peerID: uuid()
+  });
+  console.log(online)
 
 
   socket.on("disconnect", ()=>{
@@ -51,3 +34,14 @@ io.on('connection', (socket) => {
 server.listen(3000, () => {
   console.log('listening on *:3000');
 });
+
+
+
+// create unique id
+// from: https://www.codegrepper.com/code-examples/javascript/javascript+generate+unique+key
+function uuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
