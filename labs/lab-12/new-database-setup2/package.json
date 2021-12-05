@@ -1,0 +1,25 @@
+{
+  "name": "new-database-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server.js -d dist && babel abc-2021-database-firebase-adminsdk-ur2dg-5bc1a07f84.json -d dist",
+    "start": "npm run build && node dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^9.6.0",
+    "firebase-admin": "^10.0.0",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.4"
+  }
+}
