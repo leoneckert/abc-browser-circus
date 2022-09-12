@@ -1,5 +1,7 @@
 # Coding Exercise 1 (Foundation)
 
+special note: many screenshots speak of "CDV" instead of "ABC". Please ignore. It will be fixed soon and is due to a recent decision to use a different text editor this semester. If it causes confusion, contact me. 
+
 If things are unclear, please contact me on Slack or e-mail me at [leon.eckert@nyu.edu](mailto:leon.eckert@nyu.edu).
 
 Setup
