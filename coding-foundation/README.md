@@ -330,8 +330,6 @@ Finally, making use of the **Live Server** and **Chrome Developer Tools** yo
 
 ![squares.gif](assets/squares.gif)
 
-*if you want another exercise, [goats]()
-
 Please build a website like this in pure ("vanilla") JavaScript (no libraries! no p5! no jquery!). Feel free to add you own styling or variations. But keep the functionality: an input element that controls the number of elements (in my case white boxes) on the page. Give your best and ask the Internet all of your questions, it can help!
 
 ### **keyword hints**
@@ -386,7 +384,7 @@ abc-student
 
 find the files you have just worked on on your GitHub account (do you see the README.md file rendered, too?). You should submit two links: The link to your actual code (in GitHub, looks something like "github.com/your-username/abc-student/tree/main....") as well as the link to your rendered page (GitHub Pages that you set up before, the link looks something like "your-username.github.io/abc-student/coding-exercises....")
 
-Copy the links and paste them to our [Class Wiki](https://github.com/leoneckert/critical-data-and-visualization-spring-2022/wiki).
+Copy the links and paste them to our [Class Wiki](https://github.com/leoneckert/abc-browser-circus/wiki).
 
 ## **DONE! 😃**
 

@@ -10,10 +10,16 @@ ABC maintains its own gallery, the Hyperlink Gallery; this is its [lobby](https:
 First, you need to create a room on the web. You should do this within your repository. Your repository is already online using GitHub Pages, so all it takes to create a room (a webpage, I mean), is to create a new folder and populate it with a `index.html` file. I suggest this structure:
 
 ```
-abc-student-repo
+abc-student
 ├── projects
-│   ├── coding-foundation
-│   ├── test-page   
+│   ├── placeholder
+│   ├── README.md
+│   └── ...
+│
+├── mini-projects
+│   ├── placeholder
+│   ├── coding-foundation 
+│   ├── README.md
 │   └── ...
 │
 ├── your-name-room   <---- create this folder with a better name :)   
@@ -23,7 +29,8 @@ abc-student-repo
 └── ...
 ```
 
-Once you push these changes to your remote GitHub repository, you can find the new page online, copy the link, and  use it to fill out this [spreadsheet](https://docs.google.com/spreadsheets/d/1AOBBGJTcJJK1lmxepFBzBPbTY5TcrIxLwz9Gt5xJ6hY/edit?usp=sharing), in the name column, put any name you want to appear on the [Hyperlink Gallery](https://abc.leoneckert.com/hyperlink-gallery) page.
+
+Once you push these changes to your remote GitHub repository, you can find the new page online, copy the link, and  use it to fill out this [spreadsheet](https://docs.google.com/spreadsheets/d/1u47A9A0Jm0g9n6sPnMBT8QeiHfpxYt4jNHGcXILFHlc/edit?usp=sharing), in the name column, put any name you want to appear on the [Hyperlink Gallery](https://abc.leoneckert.com/hyperlink-gallery) page.
 
 #### What to put into my room?
 It's your room! Your main task is to personalize it and make it your own; make it unique and represent you as a creative being.
