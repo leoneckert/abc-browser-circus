@@ -127,6 +127,9 @@ For the whole semester, you will always work in the same folder (with subfolders
 
 **Clone remote repository using Atom**
 
+> Folllwing the steps below you MAY run into issues because "git is not installed". For Mac users, the solution is most likely going to be installing the XCode Command Line tools (open the 'Terminal', enter `xcode-select --install`, hit enter and follow the instructions). For Windows users, you can follow VSCode's guidance. If VSCode doesn't guide, follow instructions on [this page](https://git-scm.com/download/win).
+
+
 You only need to do this once in the first week. Dealing with GitHub and git these are two different things that walk hand in hand) can be complicated. If you run into any issues, or my guidance below simply does not work for you, do not hesitate message me on Slack or e-mail ([leon.eckert@nyu.edu](mailto:leon.eckert@nyu.edu)) me right away.
 
 First, let's find the repository we want to clone on your GitHub profile - this should be the "abc-student" repo that is **on YOUR account** (the one you forked just a few minutes ago). In order to tell VS Code to **clone** it, we need to tell it where to find it. The descriptor we need is to be found on the right side in the repo's interface on GitHub, copy the HTTPS-link:
