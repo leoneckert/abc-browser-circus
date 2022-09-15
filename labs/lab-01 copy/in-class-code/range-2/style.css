@@ -1,0 +1,7 @@
+/* positioning the range for its initial position.
+values are found in the inspector (elements tab) and trial and error */
+#myRange{
+  position: relative;
+  left:-99px;
+  margin-left: 102px;
+}
