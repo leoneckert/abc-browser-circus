@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  /* dark blue to match the image */
+
+  background-color: #001828;
+
+}
+
+img{
+  width: 100%;
+  height:100vh;
+  /* this is the only trick on this website,
+  flipping the image */
+  transform: rotate(180deg);
+}
