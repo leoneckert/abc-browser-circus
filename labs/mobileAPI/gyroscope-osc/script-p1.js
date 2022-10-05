@@ -24,68 +24,6 @@ https://www.w3.org/TR/orientation-event/#dom-deviceorientationevent-requestpermi
 //     }, 2000)
 // })
 
-
-let on = document.getElementById("on");
-let off = document.getElementById("off");
-
-let volumeRange = document.getElementById("volumeInput");
-
-let context = new AudioContext();
-let destination = context.destination;
-
-let oscillator = context.createOscillator();
-oscillator.type = "triangle";
-oscillator.frequency.value = 440;
-
-let gain = context.createGain();
-
-oscillator.connect(gain);
-gain.connect(destination);
-
-let oscillatorStarted = false;
-
-// initialise the volume:
-// we divide the value from the slider by 100 to bring it back to
-// a value between 0 and 1
-gain.gain.value = volumeInput.value/100;
-
-let minHz = 65;
-let maxHz = 1050;
-let midHz = (minHz + maxHz)/2;
-function map(value, x1, y1, x2, y2){
-    return (value - x1) * (y2 - x2) / (y1 - x1) + x2;
-  }
-
-let mappedHertz = map(1, 0, 100, minHz, maxHz);
-console.log("mapped hertz is", mappedHertz)
-oscillator.frequency.value = mappedHertz;
-
-  // on button click event
-on.addEventListener("click", ()=>{
-if(!oscillatorStarted){
-    oscillator.start(0);
-    oscillatorStarted = true;
-}
-
-// instead of setting full volume:
-// gain.gain.value = 1;
-// let us stay true to the volume slider:
-gain.gain.value = volumeInput.value/100;
-
-});
-
-off.addEventListener("click", ()=>{
-gain.gain.value = 0;
-});
-
-volumeRange.addEventListener("input", ()=>{
-    gain.gain.value = volumeInput.value/100;
-  })
-
-
-
-
-
 let btn = document.getElementById("button")
 
 // if ( location.protocol != "https:" ) {
@@ -105,9 +43,6 @@ function permission () {
                     document.getElementById("alpha").innerHTML = event.alpha;
                     document.getElementById("beta").innerHTML = event.beta;
                     document.getElementById("gamma").innerHTML = event.gamma;
-
-                    oscillator.frequency.value = map(event.gamma, -90, 90, minHz, maxHz);
-
                 });
                 window.addEventListener('devicemotion', (event) => {
                     // console.log(`${event.acceleration.x} m/s2`);

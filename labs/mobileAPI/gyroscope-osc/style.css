@@ -1,0 +1,79 @@
+
+#startButton{
+    width:100%;
+    height:50px;
+    font-size: 2em;
+}
+
+#main-text{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#getGyroAccess{
+    display: none;
+}
+
+#sound-interface{
+    display: none;
+}
+
+#onoff{
+    display: flex;
+}
+#onoff button{
+    width: 100%;
+    height: 70px;
+    font-size: 1em;
+}
+
+#debugbutton{
+    width: 25%;
+    height: 50px;
+}
+
+#debug{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    display: none;
+    /* align-items: center; */
+}
+#debug>*{
+    width: 100%;
+}
+#debug p{
+    margin: 0;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#hertzDisplay{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.slider-wrapper{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+}
+.slider-wrapper:first-of-type{
+    margin-top: 25px;
+    
+}
+.slider-wrapper p{
+    width:15%;
+    text-align: center;
+  
+}
+.slider-wrapper .filler{
+    width:15%;
+}
+
+.limit-range{
+    width:70%;
+}
