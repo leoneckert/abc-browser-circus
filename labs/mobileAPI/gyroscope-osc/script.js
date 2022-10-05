@@ -105,7 +105,7 @@ hertzDisplay.innerHTML = mappedHertz;
 //     gain.gain.value = 0;
 // });
 
-let playing = true;
+let playing = false;
 toggle.addEventListener("click", ()=>{
     if(playing){
         gain.gain.value = 0;
@@ -155,11 +155,11 @@ function permission() {
                 // document.getElementById("gyro-text").innerHTML = "Ready.";
                 document.getElementById("getGyroAccess").style.display = "none";
                 document.getElementById("sound-interface").style.display = "block";
-                if(!oscillatorStarted){
-                    oscillator.start(0);
-                    oscillatorStarted = true;
-                }
-                gain.gain.value = 1;
+                // if(!oscillatorStarted){
+                //     oscillator.start(0);
+                //     oscillatorStarted = true;
+                // }
+                // gain.gain.value = 1;
 
 
 
