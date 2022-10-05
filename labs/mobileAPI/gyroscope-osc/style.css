@@ -77,3 +77,20 @@
 .limit-range{
     width:70%;
 }
+
+#shareWrapper{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* outline: 1px solid black; */
+}
+
+#shareWrapper p{
+    font-family: monospace;
+}
+#shareWrapper img{
+    width: 60%;
+}
