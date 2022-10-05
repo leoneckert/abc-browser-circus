@@ -4,6 +4,12 @@ ongoing experiments
 
 gryroscope:
 
-<img src="assets/gyro.png" alt="drawing" width="200"/>
+<img src="assets/gyro-basic.png" alt="drawing" width="200"/>
 
-https://leoneckert.github.io/abc-browser-circus/labs/mobileAPI/gyroscope/
+https://leoneckert.github.io/abc-browser-circus/labs/mobileAPI/gyroscope-basic/
+
+
+
+<img src="assets/gyro-osc.png" alt="drawing" width="200"/>
+
+https://leoneckert.github.io/abc-browser-circus/labs/mobileAPI/gyroscope-osc/
