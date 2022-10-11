@@ -36,12 +36,12 @@ https://www.w3.org/TR/orientation-event/#dom-deviceorientationevent-requestpermi
 //     }, 2000)
 // })
 
-let btn = document.getElementById("button")
+// let btn = document.getElementById("button")
 
 // if ( location.protocol != "https:" ) {
 //     location.href = "https:" + window.location.href.substring( window.location.protocol.length );
 // }
-function permission () {
+function askPermission () {
     // document.getElementById('doeSupported').innerText = 'asking';
     if ( typeof( DeviceMotionEvent ) !== "undefined" && typeof( DeviceMotionEvent.requestPermission ) === "function" ) {
         // (optional) Do something before API request prompt.
@@ -49,29 +49,49 @@ function permission () {
             .then( response => {
             // (optional) Do something after API prompt dismissed.
             if ( response == "granted" ) {
-                document.getElementById('doeSupported').innerText = 'Yes!!';
 
                 window.addEventListener('deviceorientation', (event) => {
-                    document.getElementById("alpha").innerHTML = event.alpha;
-                    document.getElementById("beta").innerHTML = event.beta;
-                    document.getElementById("gamma").innerHTML = event.gamma;
-                });
-                window.addEventListener('devicemotion', (event) => {
-                    // console.log(`${event.acceleration.x} m/s2`);
-                    document.getElementById("acc_x").innerHTML = event.acceleration.x;
-                    document.getElementById("acc_y").innerHTML = event.acceleration.y;
-
-
+                    handleGyro(event);
                 });
             }
         })
             .catch( console.error )
     } else {
-        alert( "DeviceMotionEvent is not defined" );
-        document.getElementById('doeSupported').innerText = 'still no';
+        alert( "I tried everything. it doesn't work :(" );
     }
 }
 
-permission()
+// permission()
 
 // btn.addEventListener( "click", permission );
+
+function handleGyro(event){
+    document.getElementById("alpha").innerHTML = event.alpha;
+    document.getElementById("beta").innerHTML = event.beta;
+    document.getElementById("gamma").innerHTML = event.gamma;
+}
+
+function accesGyroOrAsk(){
+    try {
+        window.addEventListener('deviceorientation', (event) => {
+            handleGyro(event);
+        });
+    } catch (e) {
+        //if just accessing gyroscope doesn't work after button click, we formally ask for permission
+        askPermission();
+    }
+}
+
+
+// just acces gyroscope
+try {
+    window.addEventListener('deviceorientation', (event) => {
+        handleGyro(event);
+    });
+} catch (e) {
+    //if just accessing gyroscope doesn't work, we try first clicking a button:
+    let button = document.createElement("button")
+    button.innerHTML("access gyro or ask for permission")
+    button.addEventListener("click", accesGyroOrAsk)
+    document.getElementById("buttonContainer").appendChild(button)
+}
