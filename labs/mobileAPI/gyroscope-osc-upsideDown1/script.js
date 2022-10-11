@@ -170,16 +170,25 @@ function permission() {
                     document.getElementById("gamma").innerHTML = event.gamma;
 
                     // let newHertz = map(Math.abs(event.gamma), 0, 90, minHz, maxHz);
-                    if(Math.abs(event.beta) > 150){
-                        oscillator.frequency.value = 65;
-                        hertzDisplay.innerHTML = Math.round(65)
+                    // // simple solution
+                    // if(Math.abs(event.beta) > 150){
+                    //     oscillator.frequency.value = 65;
+                    //     hertzDisplay.innerHTML = Math.round(65)
 
-                    }else{
+                    // }else{
+                    //     oscillator.frequency.value = 400;
+                    //     hertzDisplay.innerHTML = Math.round(400)
+                    // }
+                    
+                    // jean solution
+                    if (Math.abs(event.gamma) <= 10 && Math.abs(event.beta) > 170 ) {
+                        
                         oscillator.frequency.value = 400;
                         hertzDisplay.innerHTML = Math.round(400)
+                    } else {
+                        oscillator.frequency.value = 65;
+                        hertzDisplay.innerHTML = Math.round(65)
                     }
-                    
-
 
                 });
                 window.addEventListener('devicemotion', (event) => {
