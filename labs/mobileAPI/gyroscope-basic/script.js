@@ -75,9 +75,8 @@ function permission () {
 
 
 
-permission()
 
-// btn.addEventListener( "click", permission );
+btn.addEventListener( "click", permission );
 
 
 
