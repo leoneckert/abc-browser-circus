@@ -66,6 +66,7 @@ function askPermission () {
 // btn.addEventListener( "click", permission );
 
 function handleGyro(event){
+    document.getElementById("buttonContainer").innerHTML("")
     document.getElementById("alpha").innerHTML = event.alpha;
     document.getElementById("beta").innerHTML = event.beta;
     document.getElementById("gamma").innerHTML = event.gamma;
@@ -84,14 +85,13 @@ function accesGyroOrAsk(){
 
 
 // just acces gyroscope
-try {
-    window.addEventListener('deviceorientation', (event) => {
-        handleGyro(event);
-    });
-} catch (e) {
-    //if just accessing gyroscope doesn't work, we try first clicking a button:
-    let button = document.createElement("button")
-    button.innerHTML("access gyro or ask for permission")
-    button.addEventListener("click", accesGyroOrAsk)
-    document.getElementById("buttonContainer").appendChild(button)
-}
+
+window.addEventListener('deviceorientation', (event) => {
+    handleGyro(event);
+});
+//if just accessing gyroscope doesn't work, we try first clicking a button:
+let button = document.createElement("button")
+button.innerHTML("access gyro or ask for permission")
+button.addEventListener("click", accesGyroOrAsk)
+document.getElementById("buttonContainer").appendChild(button)
+
