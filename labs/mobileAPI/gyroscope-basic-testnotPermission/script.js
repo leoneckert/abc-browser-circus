@@ -71,16 +71,4 @@ function permission () {
         document.getElementById('doeSupported').innerText = 'still no';
     }
 }
-
-
-
-
-permission()
-
-// btn.addEventListener( "click", permission );
-
-
-
-
-
-
+btn.addEventListener( "click", permission );
