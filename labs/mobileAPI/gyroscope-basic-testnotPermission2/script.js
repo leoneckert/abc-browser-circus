@@ -70,6 +70,7 @@ function handleGyro(event){
     document.getElementById("alpha").innerHTML = event.alpha;
     document.getElementById("beta").innerHTML = event.beta;
     document.getElementById("gamma").innerHTML = event.gamma;
+    
 }
 
 function accesGyroOrAsk(){
