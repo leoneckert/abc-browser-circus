@@ -170,7 +170,7 @@ function permission() {
                     document.getElementById("gamma").innerHTML = event.gamma;
 
                     // let newHertz = map(Math.abs(event.gamma), 0, 90, minHz, maxHz);
-                    if(Math.abc(event.beta) > 150){
+                    if(Math.abs(event.beta) > 150){
                         oscillator.frequency.value = 65;
                         hertzDisplay.innerHTML = Math.round(65)
 
