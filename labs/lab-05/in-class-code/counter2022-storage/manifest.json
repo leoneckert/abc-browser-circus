@@ -1,0 +1,13 @@
+{
+    "name": "Counting Forever (with storage)",
+    "version": "1.0",
+    "description": "...forever ever?",
+    "manifest_version": 3,
+    "action": {
+      "default_icon": "tent.png",
+      "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+}
