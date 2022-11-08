@@ -1,0 +1,14 @@
+{
+  "name": "server_day1",
+  "version": "1.0.0",
+  "description": "project that changes the world (for the worse)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
