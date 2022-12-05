@@ -1,0 +1,62 @@
+#buttonOutput{
+  width:100px;
+  height:100px;
+  background-color: black;
+}
+
+body{
+  margin:0;
+}
+
+#boolean1{
+  width:200px;
+  height:200px;
+}
+
+.centerElm{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top:0px;
+  left:0px;
+  pointer-events: none;
+}
+
+#inputs{
+  display: flex;
+  flex-direction: column;
+  pointer-events: all;
+
+}
+
+#textInputWrapper{
+  width:200px;
+  display: flex;
+  justify-content: center;
+  /* overflow: scroll; */
+  /* z-index: 1; */
+
+}
+#textInput{
+  font-size: 25px;
+  width:90%;
+}
+
+#textOverlay{
+  width:100%;
+  height: 100vh;
+  /* border: 1px solid black; */
+  overflow: scroll;
+  transition: transform 1s;
+
+}
+#textOut{
+  font-size: 100px;
+
+}
+#textOut p{
+  margin: 0;
+}
