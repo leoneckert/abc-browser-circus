@@ -1,3 +1,24 @@
+/*
+goal of this code:
+
+a room should have a max number of people
+if a person logs on their room is determined
+
+the room allocation is dynamic.
+if room0 and room1 are full, a new room2 will be created.
+if then a person of room0 disconnects, 
+a new person looging on will be assigned to room0 to fill the spot
+
+in other words: if somehow possible to form groups it will always be done
+
+
+
+
+
+
+*/
+
+
 const express = require('express');
 const app = express();
 const http = require('http');
@@ -12,13 +33,14 @@ app.use(express.static('public'));
 
 let connected = [];
 let rooms = [];
-let maxPerRoom = 3;
+let maxPerRoom = 2;
 
 
 function allocateRoomIdxFor(newPersonId){
     let roomWithSpot = rooms.findIndex(room=>{
-        return room.members.length < maxPerRoom
+        return room.members.length < maxPerRoom && room.members.length != 0
     })
+    console.log("allocating", roomWithSpot);
     if(roomWithSpot == -1){
         let newIdx = rooms.length
         rooms.push({
